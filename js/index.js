@@ -6,7 +6,7 @@ const navBar = document.querySelector('.nav');
 const  navLeft = menu.getBoundingClientRect().left;
 
 navOpen.addEventListener("click",()=>{
-    if(navLeft < 0){
+    if(navLeft < 0){    
         menu.classList.add("show");
         document.body.classList.add("show");
         navBar.classList.add("show");
