@@ -472,9 +472,9 @@ li {
   position: absolute;
   top: 50%;
   right: 5%;
-  transform: translate(0,-50%);
+  transform: translate(0,-50%) scale(0);
   z-index: 2;
-  /* opacity: 0; */
+  opacity: 0;
   transition: all 500ms ease-in-out;
 }
 
@@ -484,15 +484,28 @@ li {
   display: block;
   border-radius: 50%;
   padding: 1.5rem 1.6rem;
+  line-height: 2rem;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
 }
 
+.product-header .icons span i{
+  transition: all 500ms ease-in-out;
+}
 
+.product-header .icons span:hover{
+  background: #ff7c9c;
+  color: #fff;
+}
 
-
-
-
-
-
+.product:hover .icons{
+  opacity: 1;
+  transform: translate(0,-50%) scale(1);
+}
+.product:hover .icons a{
+  display: block;
+  margin-bottom: 1rem;
+}
 
 
 
